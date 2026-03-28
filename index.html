@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAINATIVE — Defining Hybrid AI Native Systems</title>
+  <meta name="description" content="HAINATIVE defines Hybrid AI Native systems across local, edge, private, and cloud environments." />
+  <style>
+    :root {
+      --text: #111;
+      --muted: #666;
+      --line: #ddd;
+      --bg: #fff;
+      --soft: #f7f7f7;
+      --link: #0a58ca;
+      --max: 1040px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    header, main, footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--line);
+      z-index: 10;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    nav a, a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    nav a:hover, a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 56px 0 32px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      line-height: 1.15;
+      margin: 0 0 14px;
+      max-width: 760px;
+    }
+
+    .hero p {
+      max-width: 780px;
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--text);
+    }
+
+    .hero-actions {
+      margin-top: 22px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid var(--text);
+      color: var(--text);
+      text-decoration: none;
+      background: #fff;
+    }
+
+    .btn.secondary {
+      border-color: var(--line);
+      color: var(--muted);
+    }
+
+    section {
+      padding: 36px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section h2 {
+      margin: 0 0 12px;
+      font-size: 1.65rem;
+    }
+
+    section p.lead {
+      max-width: 760px;
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      padding: 16px;
+      background: #fff;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .quote {
+      border-left: 3px solid var(--text);
+      padding-left: 14px;
+      margin-top: 18px;
+      max-width: 820px;
+    }
+
+    .model {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .model .node {
+      border: 1px solid var(--line);
+      padding: 16px;
+      background: var(--soft);
+    }
+
+    .node strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    ul.clean {
+      margin: 16px 0 0;
+      padding-left: 20px;
+      max-width: 820px;
+    }
+
+    .paths {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .path {
+      border: 1px solid var(--line);
+      padding: 16px;
+    }
+
+    .path h3 {
+      margin: 0 0 8px;
+    }
+
+    .path p {
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+
+    footer {
+      font-size: 0.95rem;
+      color: var(--muted);
+      padding-top: 28px;
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 1.95rem;
+      }
+      header, main, footer {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">HAINATIVE</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#why-now">Why Now</a>
+        <a href="#what-is">What Is</a>
+        <a href="#model">Model</a>
+        <a href="#principles">Principles</a>
+        <a href="#paths">Paths</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Defining Hybrid AI Native Systems</h1>
+      <p>
+        HAINATIVE is the category site for Hybrid AI Native systems.
+        It frames a systems direction where intelligence is native to the stack,
+        execution is distributed across local, edge, private, and cloud environments,
+        and coordination becomes increasingly policy-aware, agentic, and interoperable.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#why-now">Why Now</a>
+        <a class="btn secondary" href="#model">See the Model</a>
+      </div>
+    </section>
+
+    <section id="why-now">
+      <h2>Why Now</h2>
+      <p class="lead">
+        The industry may not yet share one fixed label, but it is clearly moving toward a common systems pattern.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>AI is becoming native</h3>
+          <p>
+            AI is no longer just an application feature. It is becoming part of the system’s design,
+            operation, maintenance, and improvement loop.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Execution is becoming hybrid</h3>
+          <p>
+            Workloads increasingly span local devices, edge nodes, private infrastructure, and public cloud
+            under latency, sovereignty, cost, and availability constraints.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Coordination is becoming agentic</h3>
+          <p>
+            Systems are moving beyond single-model calls toward tool use, memory, workflows,
+            orchestration, observability, and governance.
+          </p>
+        </div>
+      </div>
+      <div class="quote">
+        <p>
+          HAINATIVE exists to name and clarify this converging pattern before it gets reduced
+          to isolated buzzwords.
+        </p>
+      </div>
+    </section>
+
+    <section id="what-is">
+      <h2>What Is HAINATIVE</h2>
+      <p class="lead">
+        Hybrid AI Native is not just cloud AI, edge AI, or agentic AI by itself.
+      </p>
+      <p>
+        It is a systems category for intelligent execution across distributed environments,
+        where architecture, protocol, runtime, governance, and productization must work together.
+      </p>
+      <ul class="clean">
+        <li><strong>Native by design</strong> — AI is built into the system, not attached afterward.</li>
+        <li><strong>Hybrid by reality</strong> — execution spans multiple environments under real constraints.</li>
+        <li><strong>Agentic by operation</strong> — coordination increasingly happens through orchestrated agents and workflows.</li>
+        <li><strong>Governed by policy</strong> — trust, locality, routing, fallback, and auditability become core concerns.</li>
+      </ul>
+    </section>
+
+    <section id="model">
+      <h2>The HAIN Model</h2>
+      <p class="lead">
+        HAIN turns the category into a layered system rather than leaving it as a slogan.
+      </p>
+      <div class="model">
+        <div class="node">
+          <strong>HAIN World</strong>
+          Public entry and ecosystem overview.
+        </div>
+        <div class="node">
+          <strong>HAINOA</strong>
+          Open architecture and system language.
+        </div>
+        <div class="node">
+          <strong>HAINPRO</strong>
+          Protocol atlas, comparison, gap mapping, and HAINP drafts.
+        </div>
+        <div class="node">
+          <strong>HAINIZE</strong>
+          Productization, adoption, and operational enablement.
+        </div>
+      </div>
+      <div class="quote">
+        <p>
+          In this model, category comes first, architecture gives structure, protocol gives rules,
+          and productization gives adoption.
+        </p>
+      </div>
+    </section>
+
+    <section id="principles">
+      <h2>Principles</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Native by Design</h3>
+          <p>AI should be embedded into system design, not bolted onto a finished stack.</p>
+        </div>
+        <div class="card">
+          <h3>Hybrid by Constraint</h3>
+          <p>Execution placement is shaped by reality: latency, privacy, sovereignty, reliability, and cost.</p>
+        </div>
+        <div class="card">
+          <h3>Policy-Aware by Default</h3>
+          <p>Routing, locality, fallback, portability, and auditability must be explicit, not accidental.</p>
+        </div>
+        <div class="card">
+          <h3>Agentic but Governed</h3>
+          <p>Agentic coordination should increase capability without sacrificing control, safety, or traceability.</p>
+        </div>
+        <div class="card">
+          <h3>Interoperable</h3>
+          <p>Open systems need shared architectural and protocol language, not isolated implementations.</p>
+        </div>
+        <div class="card">
+          <h3>Observable</h3>
+          <p>Distributed intelligence must remain visible, measurable, diagnosable, and governable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="paths">
+      <h2>Paths</h2>
+      <p class="lead">
+        HAINATIVE is the conceptual front door. The deeper layers live elsewhere in the system.
+      </p>
+      <div class="paths">
+        <div class="path">
+          <h3>Go to HAIN World</h3>
+          <p>The public-facing system overview and top-level navigation.</p>
+          <a href="https://hainworld.com">Visit HAIN World</a>
+        </div>
+        <div class="path">
+          <h3>Go to HAINOA</h3>
+          <p>The open architecture layer for system design and structural language.</p>
+          <a href="https://hainoa.org">Visit HAINOA</a>
+        </div>
+        <div class="path">
+          <h3>Go to HAINPRO</h3>
+          <p>The protocol atlas, comparison hub, and HAINP draft portal.</p>
+          <a href="https://hainpro.com">Visit HAINPRO</a>
+        </div>
+        <div class="path">
+          <h3>Go to HAINIZE</h3>
+          <p>The future productization and adoption layer of the HAIN system.</p>
+          <a href="https://hainize.com">Visit HAINIZE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>HAINATIVE — Defining Hybrid AI Native Systems</p>
+  </footer>
+</body>
+</html>
